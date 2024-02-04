@@ -1,6 +1,6 @@
 import { Button, Container, Nav, Navbar as NavbarBS} from "react-bootstrap"
 import { NavLink } from "react-router-dom"
-import CartIcon from "../../public/imgs/cart.svg";
+import CartIcon from "../img/cart.svg";
 
 export const Navbar = () => {
   return (
@@ -13,7 +13,7 @@ export const Navbar = () => {
             </Nav>
         <Button 
         style={{ width:"3rem", height:"3rem", borderColor: 'gray', position: 'relative', borderRadius: 15}}
-        className="btn btn-light btn-outline"><img src={CartIcon} height={20} width={20} color="white"/>
+        className="btn btn-light"><img src={CartIcon} height={20} width={20} color="white"/>
         <div className="rounded-circle bg-danger d-flex justify-content-center align-items-center" style={{color:'white', width:"1.5rem", height: "1.5rem", position: 'absolute', left: 34}}>5</div>
         </Button>
         </Container>
