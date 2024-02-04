@@ -1,8 +1,8 @@
 import { ReactNode, createContext, useContext, useState } from "react"
 
-const ShoppingCartContext = createContext({})
+const ShoppingCartContext = createContext({} as ShoppingCartContext)
 
-export const ShoppingCart = () => {
+export const useShoppingCart = () => {
   return (
     useContext(ShoppingCartContext)
   )
